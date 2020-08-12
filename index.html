@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WeatherAPI</title>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="location">
+            <h3 id="location"></h3>
+            <time id="date"></time>
+            <time id="time"></time>
+        </div>
+
+        <div class="main-display">
+            <div class="weather">
+                <img id="icon">
+                <p id="degree"></p>
+                <p id="desc"></p>
+            </div>
+            <div class="sun">
+                <div class="sunrise">
+                    <p>Sunrise</p>
+                    <time id="sunrise"></time>
+                </div>
+
+                <div class="circle">
+                    <div class="mph">
+                        <p></p>
+                    </div>
+                    <div class="arrow">
+                        <div class="head"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+
+                <div class="sunset">
+                    <p>Sunset</p>
+                    <time id="sunset"></time>
+                </div>
+            </div>
+        </div>
+
+        <div class="change-location">
+            <button id="changeLocation" class="changelocal">Change Location</button>
+        </div>
+    </div>
+
+    <div class="modal-container invisible">
+        <div class="modal">
+            <h4>Change Location</h4>
+            <label for="city">City:</label>
+            <input type="text" id="city">
+        </div>
+        <div class="buttons">
+            <button class="cancel">Cancel</button>
+            <button class="save">Save</button>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+
+</html>
